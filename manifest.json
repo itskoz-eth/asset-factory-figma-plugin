@@ -1,0 +1,42 @@
+{
+  "name": "Asset Factory",
+  "id": "asset-factory-plugin",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "ui": "dist/ui.html",
+  "capabilities": [],
+  "enableProposedApi": false,
+  "editorType": ["figma"],
+  "documentAccess": "dynamic-page",
+  "networkAccess": {
+    "allowedDomains": ["*"],
+    "reasoning": "Required for MCP server communication and asset export"
+  },
+  "permissions": ["currentuser"],
+  "menu": [
+    {
+      "name": "Open Asset Factory",
+      "command": "open-ui"
+    },
+    {
+      "separator": true
+    },
+    {
+      "name": "Quick Generate",
+      "menu": [
+        { "name": "Twitter Post", "command": "quick-twitter" },
+        { "name": "LinkedIn Post", "command": "quick-linkedin" },
+        { "name": "Instagram Square", "command": "quick-instagram" },
+        { "name": "All Social Sizes", "command": "quick-all-social" }
+      ]
+    },
+    {
+      "name": "Run Audit",
+      "command": "run-audit"
+    },
+    {
+      "name": "Self-Test",
+      "command": "run-self-test"
+    }
+  ]
+}

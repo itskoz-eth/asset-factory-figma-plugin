@@ -1,0 +1,62 @@
+# Brand Configuration for Asset Factory
+# Copy this file to brand-config.yaml and customize for your brand
+
+brand:
+  name: "Your Company Name"
+  tagline: "Your brand tagline goes here"
+
+colors:
+  # Primary brand color - used for key elements
+  primary: "#FE621D"
+  
+  # Secondary color - backgrounds, supporting elements
+  secondary: "#1C1C1C"
+  
+  # Accent color - highlights, CTAs, special elements
+  accent: "#5DFDCB"
+  
+  # Background colors
+  background_light: "#F1F1F1"
+  background_dark: "#1C1C1C"
+  
+  # Text colors
+  text_light: "#F1F1F1"
+  text_dark: "#1C1C1C"
+
+typography:
+  headline_font: "Inter"
+  body_font: "Inter"
+  headline_sizes: [48, 36, 28, 24]
+  body_sizes: [18, 16, 14, 12]
+
+logo:
+  primary: "logo-primary.svg"
+  mark: "logo-mark.svg"
+  wordmark: "logo-wordmark.svg"
+  placements:
+    - "top-left"
+    - "bottom-right"
+
+effects:
+  gradients:
+    - name: "brand-glow"
+      type: "radial"
+      colors: ["primary", "secondary"]
+    - name: "accent-edge"
+      type: "linear"
+      angle: 135
+      colors: ["accent", "transparent"]
+  shadows:
+    - name: "card-shadow"
+      offset: [0, 4]
+      blur: 24
+      color: "rgba(0,0,0,0.15)"
+
+shapes:
+  decorative:
+    - "corner-accent"
+    - "glow-ellipse"
+  containers:
+    - "card"
+    - "pill"
+    - "badge"
